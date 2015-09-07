@@ -1,0 +1,33 @@
+{
+  "name": "example-orientdb",
+  "version": "0.0.1",
+  "description": "Example of a CRUD OrientDb",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --require mocha-babel",
+    "build": "./node_modules/babel/bin/babel.js --stage 1 src/ --out-dir dist",
+    "pretest": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/byron7cueva/example-orientdb.git"
+  },
+  "keywords": [
+    "crud",
+    "orientdb"
+  ],
+  "author": "byron7cueva@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/byron7cueva/example-orientdb/issues"
+  },
+  "homepage": "https://github.com/byron7cueva/example-orientdb#readme",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "chai": "^3.2.0",
+    "mocha": "^2.3.1"
+  },
+  "dependencies": {
+    "orientjs": "^2.0.0"
+  }
+}
